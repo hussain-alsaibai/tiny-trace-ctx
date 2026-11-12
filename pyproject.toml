@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-trace-ctx"
+version = "0.1.0"
+description = "W3C Trace Context propagation, stdlib-only."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Hussain AlSaibai", email = "hussain.alsaibai@gmail.com"},
+]
+keywords = ["trace-context", "w3c", "observability", "opentelemetry", "stdlib"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hussain-alsaibai/tiny-trace-ctx"
+
+[tool.setuptools]
+py-modules = ["tiny_trace_ctx"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+addopts = "-q"
