@@ -14,7 +14,8 @@ across HTTP, AMQP, and gRPC without the OpenTelemetry runtime.
 ## Install
 
 ```bash
-pip install tiny-trace-ctx
+# From GitHub (recommended -- not yet on PyPI)
+pip install git+https://github.com/hussain-alsaibai/tiny-trace-ctx.git
 ```
 
 ## Usage
